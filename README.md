@@ -1,5 +1,6 @@
 # VPA-Codeforge
 # Virtual Personal Assistant
+## Start by running main.py
 
 ## Necessary Libraries:
 - spacy: 3.7.2
