@@ -1,16 +1,3 @@
-import csv
-
-# def save_to_csv(file_name,date, time):
-#     with open(file_name+'.csv', 'a', newline='') as csvfile:
-#         fieldnames = ['date', 'time']
-#         writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
-
-#         # If the file is empty, write the header
-#         if csvfile.tell() == 0:
-#             writer.writeheader()
-
-#         # Write the data and time to the CSV file
-#         writer.writerow({'date': date, 'time': time})
 
 import csv
 

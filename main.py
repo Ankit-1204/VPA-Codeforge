@@ -25,7 +25,7 @@ def gui(user_name):
         
         command = entry.get()
 
-        # Add input validation here if needed
+        
 
         if user_name and command and command != entry_placeholder and command!="":
             classification_result = load_and_predict(command)
@@ -49,14 +49,14 @@ def gui(user_name):
                     widget.destroy()
         commands = retrieve_data(user_name)
         print(commands)
-        # Add logic to handle empty commands if needed
+        
         
         for cmd in commands:
             primary_key, date, time, events, along_with = cmd
             events = events.strip("[]").replace("'", "")
             along_with = along_with.strip("[]").replace("'", "").split(', ')
 
-            # Checking if along_with has only one value
+           
             if len(along_with) == 1:
                 result_string = f"{date} {time} {events}"
             else:
@@ -102,13 +102,13 @@ def gui(user_name):
 
     display_button = tk.Button(root, text="Show Commands", command=display, bg="#2980b9", fg="#ffffff", font=("Arial", 12), relief=tk.GROOVE)
     display_button.pack(pady=5)
-    # Replace 3 with the desired number of columns
+  
     def create_task_block(command):
-        # Create a frame for the task block
+   
         task_frame = tk.Frame(root, bg="#ecf0f1", relief=tk.RAISED, bd=2)
         task_frame.pack(pady=5, padx=10, fill=tk.X)
 
-        # Create a label inside the frame to display the command
+      
         task_label = tk.Label(task_frame, text=command, font=("Arial", 12), bg="#ecf0f1", fg="#2c3e50")
         task_label.pack(padx=10, pady=5, side=tk.LEFT)
 
@@ -170,7 +170,7 @@ def open_registration_window():
 
     registration_frame.pack()
 
-# Create the main login window
+
 window = tk.Tk()
 window.title("Login form")
 window.geometry('440x440')

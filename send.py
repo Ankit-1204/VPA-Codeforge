@@ -11,13 +11,13 @@ def mail(date_entity,time_entity,user_names_found,event_names_found):
             username = row['username']
             email = row['email']
 
-            # Check if the current username is in the list of user_names_found
+          
             if username in user_names_found:
                 user_emails.append(email)
     if len(user_names_found) == 1:
-        participants= ""  # Return an empty string if the size is 1
+        participants= ""  
     else:
-        # Concatenate the usernames using "between" and commas
+        
         participants = " between " + ", ".join(user_names_found[:-1]) + " and " + user_names_found[-1]
     sent_from = gmail_user
     to = user_emails

@@ -1,10 +1,5 @@
 
-# # Check if the model is already downloaded
-# if model_name not in spacy.util.info()["installed"]:
-#     # Download the model
-#     spacy.cli.download(model_name)
 
-# # Load the model
 
 import spacy
 import os
@@ -14,7 +9,6 @@ import pandas as pd
 from spacy.matcher import PhraseMatcher
 from send import mail
 
-# Function to extract DATE and TIME entities from user input
 def adder(user_name,user_input,nlp):
     doc = nlp(user_input)
     date_time_entities = {
@@ -34,20 +28,20 @@ def adder(user_name,user_input,nlp):
         return word.lower() in [name.lower() for name in names]
     
     
-    # Add more event names as needed
+  
     event_names = ["meeting", "presentation", "interview", "lunch", "deadline", "team call", "review"]
     
 
-# Process the input text
+
     
     doc = nlp(user_input)
 
-# Initialize a PhraseMatcher for event names
+
     matcher = PhraseMatcher(nlp.vocab)
     event_patterns = [nlp(event) for event in event_names]
     matcher.add("EventMatcher", None, *event_patterns)
 
-# Extract user names and event names
+
     user_names_found = [token.text for token in doc if is_user_name(token.text)]
     user_names_found.append(user_name)
     
@@ -60,5 +54,5 @@ def adder(user_name,user_input,nlp):
     mail(date_entity,time_entity,user_names_found,event_names_found)
     return date_entity,time_entity,user_names_found,event_names_found
 
-# Example usage
+
 

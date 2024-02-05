@@ -4,7 +4,7 @@ from number_parser import parse_ordinal
 
 
 
-# Function to extract DATE and TIME entities from user input
+
 def delete(user_name,user_input,nlp):
     doc = nlp(user_input)
     ordinal_entities = {
