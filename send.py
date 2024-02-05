@@ -1,8 +1,8 @@
 import smtplib
 import csv
 def mail(date_entity,time_entity,user_names_found,event_names_found):
-    gmail_user = 'astha00803@gmail.com'
-    gmail_password = 'pzda pnke duzc wdjl'
+    gmail_user ="""admin email"""                      
+    gmail_password = """"admin app password"""
     user_emails=[]
     with open('users.csv', 'r', newline='', encoding='utf-8') as csvfile:
         csvreader = csv.DictReader(csvfile)

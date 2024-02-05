@@ -1,20 +1,4 @@
 primary_key,date,time,event,Along_with
-
-1,2024-02-05,09:00:00,['meeting'],"['Astha', 'Ankit']"
-2,2024-02-05,11:00:00,['meeting'],['Ankit']
-3,2024-02-05,06:00:00,['meeting'],"['Astha', 'Ankit']"
-4,2024-02-05,11:00:00,['Reminder'],"['astha', 'Ankit']"
-5,2024-02-05,15:00:00,['meeting'],"['ankit', 'Astha']"
-6,2024-02-05,07:00:00,['meeting'],['Astha']
-7,2024-02-10,05:00:00,['review'],['Astha']
-8,2024-02-05,09:00:00,['meeting'],['Enter your name...']
-9,2024-02-05,09:00:00,['meeting'],['Ankit']
-10,2024-02-05,09:00:00,['meeting'],['Ankit']
-11,2024-02-05,09:00:00,['Reminder'],['Ankit']
-12,2024-02-05,09:00:00,['meeting'],['Ankit']
-13,2024-02-07,18:00:00,['meeting'],"['Astha', 'Ankit']"
-14,2024-02-09,06:00:00,['meeting'],['Ankit']
-15,2024-02-06,06:30:00,['meeting'],"['astha', 'Ankit']"
-16,2024-01-20,07:20:00,['meeting'],['Ankit']
-17,2024-02-06,09:00:00,['meeting'],['Ankit']
-18,2024-02-06,21:00:00,['meeting'],['Ankit']
+1,2024-02-06,07:00:00,['meeting'],"['Astha', 'Ankit']"
+2,2024-02-05,05:00:00,['meeting'],['Ankit']
+3,2024-02-06,18:00:00,['meeting'],"['Astha', 'Ankit']"
