@@ -49,4 +49,3 @@ To ensure data security, the assistant requires users to log in. Only registered
 4. Configure email settings for notification functionality.
 5. Run the application using npm start or python app.py.
 
-## Enjoy using your Virtual Personal Assistant!
